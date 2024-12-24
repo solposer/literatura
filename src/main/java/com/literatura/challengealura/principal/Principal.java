@@ -31,14 +31,6 @@ public class Principal {
             switch (opcion){
                 case 1: buscarLibro();
                 break;
-                case 2: listarLibros();
-                break;
-                case 3: listarAutores();
-                break;
-                case 4: listarAutoresVivos();
-                break;
-                case 5: listarLibroPorIdioma();
-                break;
                 case 0: System.out.println("cerrando aplicación...");
                 break;
                 default: System.out.println("opción inválida");
@@ -56,7 +48,7 @@ private DatosBooks getDatosBook(){
 }
 
 private void buscarLibro(){
-    DatosBooks books = getDatosBook();
+    DatosBooks datos = getDatosBook();
     System.out.println(datos);
 }
 }
